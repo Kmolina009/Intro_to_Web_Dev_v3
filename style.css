@@ -11,15 +11,50 @@ e5decf
 e36b76
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,100&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
     background-color: #e36b76;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0;
+    padding: 0;
+    background-color: #e5decf;
+}
+.project-title{
+    font-size: 30pt;
+}
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .project-container{
+    display: flex;
+    flex-direction: row;
     border-radius: 10px;
     background-color: rgb(190, 234, 147);
-    height: 36vh;
+    height: 50vh;
     width: 75%;
+    max-width: 956px;
     margin-top: 10px;
     filter: drop-shadow(10px 10px 4px#314d4e);
+}
+.project-container > image-container{
+    box-sizing: content-box;
+    width: 50%;
+    align-items: center;
+}
+.project-container > image-container > img{
+    box-sizing: content-box;
+    width: 80%;
+    height: 80%;
+    max-width: 475px;
 }
