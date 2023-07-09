@@ -27,9 +27,6 @@ header{
     padding: 0;
     background-color: #e5decf;
 }
-.project-title{
-    font-size: 30pt;
-}
 .projects-container{
     display: flex;
     flex-direction: column;
@@ -38,7 +35,7 @@ header{
 }
 .project-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 10px;
     background-color: rgb(190, 234, 147);
     height: 50vh;
@@ -47,14 +44,32 @@ header{
     margin-top: 10px;
     filter: drop-shadow(10px 10px 4px#314d4e);
 }
-.project-container > image-container{
-    box-sizing: content-box;
-    width: 50%;
-    align-items: center;
+.project-info-layout{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
 }
-.project-container > image-container > img{
+.project-info{
+    width: 45%;
+}
+.project-title{
+    margin-top: 2%;
+    margin-bottom: 0;
+    margin-left: 2%;
+    font-size: 30pt;
+}
+.project-container > .image-container{
+    display: flex;
     box-sizing: content-box;
-    width: 80%;
-    height: 80%;
-    max-width: 475px;
+    width: 68%;
+    display: flex;
+    justify-content: flex-end;
+}
+div.image-container > img{
+/* .project-container > .image-container > img{ */
+    box-sizing: content-box;
+    width: 90%;
+    /* height: 80%; */
+    max-width: 400px;
 }
