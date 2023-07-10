@@ -24,8 +24,14 @@ body{
 }
 header{
     margin: 0;
-    padding: 0;
     background-color: #e5decf;
+    height: 10vh;
+}
+header > h1{
+    position: relative;
+    top: 22%;
+    left: 5%;
+    margin: 0;
 }
 .projects-container{
     display: flex;
